@@ -13,7 +13,7 @@ const ProgrammingLanguage = sequelize.define('ProgrammingLanguage', {
         unique: true,
     },
     paradigm:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     release_year:{
@@ -21,7 +21,7 @@ const ProgrammingLanguage = sequelize.define('ProgrammingLanguage', {
         allowNull: true,
     },
 }, {
-    tableName:'Programming_languages',
+    tableName:'programming_languages',
     timestamps: true,
 });
 
